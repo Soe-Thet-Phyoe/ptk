@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo"> <a href="#">LOGO</a>
+            </div>
+            <ul class="top">
+                <li><a href="index.html" class="active"> Home</a></li>
+                <li><a href="Shop.html"> Shop</a></li>
+                <li><a href="Content.html"> Content Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="slider">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/slider1.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/slider2.jpg">
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-scrollbar"></div>
+            <div class="swiper-pagination"></div>
+        </section>
+        
+        
+    </main>
+    <footer></footer>
+    <!-- swiper script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+    var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        autoplay: {delay:3000},
+        speed: 3000,
+        effect: 'coverflow',
+
+        navigation: {
+            nextEl : ".swiper-button-next",
+            prevEl : ".swiper-button-prev",
+        },
+
+        scrollbar:{
+            el : ".swiper-scrollbar",
+        },
+
+        pagination:{
+            el : ".swiper-pagination",
+            clickable : true,
+        },
+
+    });
+  </script>
+</body>
+
+</html>
